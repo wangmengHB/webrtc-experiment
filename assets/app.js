@@ -211,7 +211,7 @@ function SympleChat($scope) {
         $scope.client.options.peer.user = $scope.handle;
 
 
-        console.log('directUser:', $scope.client.options.peer.user)
+        console.log('directUser:', $scope.client.options.peer.user);
         $scope.client.connect();
         $scope.isLoading = true;
         //$scope.$apply();
