@@ -3,3 +3,4 @@
 bak
 log
 node_modules
+*.rdb
