@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
-const redis = require('redis');
 const os = require('os');
 const https = require('https');
+const redis = require('redis');
 const client = redis.createClient();
 const app = express();
 const Symple = require('./server/symple.js');
@@ -58,8 +58,10 @@ const config = {
 
   ssl: {
     enabled: true,
-    "key" : path.resolve(__dirname, "./ssl/MyKey.key"), 
-    "cert" : path.resolve(__dirname, "./ssl/MyCertificate.crt")
+    // key: path.resolve(__dirname, "./ssl/MyKey.key"), 
+    // cert: path.resolve(__dirname, "./ssl/MyCertificate.crt")
+    key: path.resolve(__dirname, "./ssl/key.pem"), 
+    cert: path.resolve(__dirname, "./ssl/cert.pem")
   }   
 }
 
